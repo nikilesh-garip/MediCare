@@ -1,4 +1,4 @@
-# smartRX Architecture: Drug Interaction Detection
+# MediCare Architecture: Drug Interaction Detection
 
 ## Overview
 
@@ -29,7 +29,7 @@ The drug interaction detection module combines three independent signal sources 
                     └────────────────┬────────────────┘
                                      │
                     ┌────────────────▼────────────────┐
-                    │   Gemini LLM Reasoning          │
+                    │   Clinical Reasoning Engine    │
                     │   (Validate + Re-rank)          │
                     └────────────────┬────────────────┘
                                      │
@@ -191,7 +191,7 @@ This is suspicious → flag as severe interaction candidate.
 
 ---
 
-## Signal 3: Gemini LLM Reasoning
+## Signal 3: Clinical Reasoning Engine
 
 ### Purpose
 Apply clinical knowledge to merge signals, validate against known safe combinations, and generate human-readable explanations.
